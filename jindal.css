@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary: #34D399;
+    --secondary: #f50057;
+    --primary-dark: #10B981;
+    --secondary-dark: #ab003c;
+    --off-white: #f8f8f8;
+    --white: #ffffff
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  
+  .nav {
+    
+    background-color: #34D399;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 0.5rem;
+    justify-content: space-between;
+    display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: center;
+  text-align: right;
+  text-decoration-style: none;
+ 
+  
+}
+  
+.nav .active {
+    font-weight: bolder;
+    color: white;
+    text-align: right;
+    display: inline-block;
+    text-decoration-style: none;
+    
+}
+.nav .nav-pills{
+    color: white;
+    text-decoration-style: none;
+}
+
+.nav.logo {
+    font-weight: bolder;
+    color: white;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0.5rem;
+    color: white;
+}
+
+.nav ul {
+    text-align: right;
+    color: white;
+}
+.nav-brand{
+    margin:center;
+    border-radius: 1rem;
+}
+.brand{
+    margin:center;
+    border-radius: 1rem;
+    max-width:500px;
+    height: auto;
+    margin: auto;
+    display: block;
+    padding:0.5rem;
+}
+
+header {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 0rem;
+    color: #6B7280;
+}
+
+header .image {
+border-radius: 1rem;
+    max-width: 400px;
+    height: auto;
+    margin: auto;
+    display: block;
+    padding:0.5rem;
+}
+
+.ow {
+    background-color: #D1FAE5;
+    text-align: center;
+    
+}
+
+section {
+    padding: 2rem 1rem 2rem 1rem;
+   
+}
+.section h1,h2,h3{
+    text-align: center;
+}
+#home .home-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--light-gray);
+  }
+  .primary-link {
+    
+   color: white;
+   text-decoration: none;
+   font-size: 1rem;
+   padding: 0.5rem 1rem;
+   border-radius :0.5rem;
+   text-decoration: none;
+   background-color: var(--primary);
+   
+   letter-spacing: 0.1rem;
+   box-sizing: border-box;
+}
+
+
+/** footers **/
+footer {
+    
+    background-color: #34D399;
+    padding: 1rem;
+    text-align: center;
+    color: var(--white);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    
+}
+#footer .footer-header{
+    font-weight: bolder;
+}
+
+footer a {
+    color: var(--white);
+    
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+footer li {
+    list-style: none;
+    padding: 0.5rem;;
+    color: white;
+}
+
+.text-m {
+    font-size: 1.2rem;
+    color: white;
+}
+
