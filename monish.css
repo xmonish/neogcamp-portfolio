@@ -11,7 +11,7 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color:#E7F1F3;
+    background-color:#aed3e2;
   }
   
   
@@ -113,8 +113,8 @@ section {
     padding-top: 1rem;
     color: var(--light-gray);
   }
+
   .primary-link {
-    
    color: white;
    text-decoration: none;
    font-size: 1rem;
@@ -122,7 +122,6 @@ section {
    border-radius :0.5rem;
    text-decoration: none;
    background-color: var(--primary);
-   
    letter-spacing: 0.1rem;
    box-sizing: border-box;
 }
