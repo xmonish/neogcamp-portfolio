@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Projects</title>
+        <link href="blog.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    </head>
+    <body>
+        
+    <nav class="nav">
+        <div class="nav-brand"><lottie-player src="play2.json"  speed="1"  style="width: 150px; height: auto;" loop  autoplay></lottie-player></div>
+        
+        <div>
+            <ul>
+                <li>
+                    <a href="index.html" class="nav-pills">
+                        HOME
+                    </a>
+
+                </li>
+                <li>
+                    <a href="monish2.html"class="nav-pills" >
+                        PROJECTS
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#"class="active" >
+                        BLOGS
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr>
+    <header>
+    <!-- <div class="brand"><lottie-player src="blog.json"  speed="1"  style="width: 400px; height: auto;" loop  autoplay></lottie-player></div> -->
+    </header> 
+
+      <header>
+
+            <h1> Make any site do <span style="color:#4B5563">Harlem Shake</span>! </h1>
+
+            <hr>
+
+            It's very funny to see any site doing funny stuffs like juggling on its own. You can make any site do harlem shake simply by copying the code below. First copy the entire code below. Then open your browser and open any website, then right click the mouse button and click on INSPECT. Then go to the CONSOLE option, and paste the code in the coding area and press ENTER. After doing this, you'll be amazed!
+            <br>
+            <br>
+-----------------------------------------------CODE------------------------------------------------------ 
+            <br>
+<pre class="prettyprint lang-js">
+    
+    (function() {
+        &#39;use strict&#39;;
+    
+    
+    
+        javascript: (function () {
+        function c() {
+            var e = document.createElement(&quot;link&quot;);
+            e.setAttribute(&quot;type&quot;, &quot;text/css&quot;);
+            e.setAttribute(&quot;rel&quot;, &quot;stylesheet&quot;);
+            e.setAttribute(&quot;href&quot;, f);
+            e.setAttribute(&quot;class&quot;, l);
+            document.body.appendChild(e)
+        }
+        function h() {
+            var e = document.getElementsByClassName(l);
+            for (var t = 0; t &lt; e.length; t++) {
+                document.body.removeChild(e[t])
+            }
+        }
+        function p() {
+            var e = document.createElement(&quot;div&quot;);
+            e.setAttribute(&quot;class&quot;, a);
+            document.body.appendChild(e);
+            setTimeout(function () {
+                document.body.removeChild(e)
+            }, 100)
+        }
+        function d(e) {
+            return {
+                height: e.offsetHeight,
+                width: e.offsetWidth
+            }
+        }
+        function v(i) {
+            var s = d(i);
+            return s.height &gt; e &amp;&amp; s.height &lt; n &amp;&amp; s.width &gt; t &amp;&amp; s.width &lt; r
+        }
+        function m(e) {
+            var t = e;
+            var n = 0;
+            while ( !! t) {
+                n += t.offsetTop;
+                t = t.offsetParent
+            }
+            return n
+        }
+        function g() {
+            var e = document.documentElement;
+            if ( !! window.innerWidth) {
+                return window.innerHeight
+            } else if (e &amp;&amp; !isNaN(e.clientHeight)) {
+                return e.clientHeight
+            }
+            return 0
+        }
+        function y() {
+            if (window.pageYOffset) {
+                return window.pageYOffset
+            }
+            return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+        }
+        function E(e) {
+            var t = m(e);
+            return t &gt;= w &amp;&amp; t &lt;= b + w
+        }
+        function S() {
+            var e = document.createElement(&quot;audio&quot;);
+            e.setAttribute(&quot;class&quot;, l);
+            e.src = i;
+            e.loop = false;
+            e.addEventListener(&quot;canplay&quot;, function () {
+                setTimeout(function () {
+                    x(k)
+                }, 500);
+                setTimeout(function () {
+                    N();
+                    p();
+                    for (var e = 0; e &lt; O.length; e++) {
+                        T(O[e])
+                    }
+                }, 15500)
+            }, true);
+            e.addEventListener(&quot;ended&quot;, function () {
+                N();
+                h()
+            }, true);
+            e.innerHTML = &quot; &lt;p&gt;If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.&lt;/p&gt; &lt;p&gt;&quot;;
+            document.body.appendChild(e);
+            e.play()
+        }
+        function x(e) {
+            e.className += &quot; &quot; + s + &quot; &quot; + o
+        }
+        function T(e) {
+            e.className += &quot; &quot; + s + &quot; &quot; + u[Math.floor(Math.random() * u.length)]
+        }
+        function N() {
+            var e = document.getElementsByClassName(s);
+            var t = new RegExp(&quot;\\b&quot; + s + &quot;\\b&quot;);
+            for (var n = 0; n &lt; e.length;) {
+                e[n].className = e[n].className.replace(t, &quot;&quot;)
+            }
+        }
+        var e = 30;
+        var t = 30;
+        var n = 350;
+        var r = 350;
+        var i = &quot;https://s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3&quot;;
+        var s = &quot;mw-harlem_shake_me&quot;;
+        var o = &quot;im_first&quot;;
+        var u = [&quot;im_drunk&quot;, &quot;im_baked&quot;, &quot;im_trippin&quot;, &quot;im_blown&quot;];
+        var a = &quot;mw-strobe_light&quot;;
+        var f = &quot;https://s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css&quot;;
+        var l = &quot;mw_added_css&quot;;
+        var b = g();
+        var w = y();
+        var C = document.getElementsByTagName(&quot;*&quot;);
+        var k = null;
+        for (var L = 0; L &lt; C.length; L++) {
+            var A = C[L];
+            if (v(A)) {
+                if (E(A)) {
+                    k = A;
+                    break
+                }
+            }
+        }
+        if (A === null) {
+            console.warn(&quot;Could not find a node of the right size. Please try a different page.&quot;);
+            return
+        }
+        c();
+        S();
+        var O = [];
+        for (var na= 0; na &lt; C.length; na++) {
+            var vd = C[na];
+            if (v(vd)) {
+                O.push(vd)
+            }
+        }
+    })()
+    
+    
+    
+    })();</pre>
+
+
+
+
+            <hr>
+        </header>  
+
+     <footer id="footer">
+        <div class="footer-header"> Social media presence : </div>
+        
+        <div>
+            <a class="link" href="https://www.linkedin.com/in/xmonish/" target="_blank">
+                <span class="fab fa-linkedin fa-2x"></span>
+            </a>
+            <a class="link" href="https://github.com/xmonish/" target="_blank">
+                <span class="fab fa-github fa-2x"></span>
+            </a>
+            <a class="link" href="https://twitter.com/monishsingh26" target="_blank">
+                <span class="fab fa-twitter fa-2x"></span>
+            </a>
+            
+        </div>
+    </footer>
+    </body>
+</html>
